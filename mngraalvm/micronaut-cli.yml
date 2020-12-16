@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: mngraalvm
+---
+testFramework: junit
+sourceLanguage: java
