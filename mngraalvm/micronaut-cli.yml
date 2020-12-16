@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.msc.mngraalvm
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, graalvm, gradle, http-client, java, java-application, logback, netty-server, readme, shade, spock, yaml]
