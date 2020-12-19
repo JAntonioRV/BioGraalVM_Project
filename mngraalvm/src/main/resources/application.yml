@@ -1,3 +1,6 @@
 micronaut:
   application:
     name: mngraalvm
+  server:
+    cors:
+      enabled: true
