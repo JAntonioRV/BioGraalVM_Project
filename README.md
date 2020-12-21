@@ -19,3 +19,9 @@ Dicha API REST se consultará por medio una aplicación Web de Angular que tenga
 * SDKMAN 5.9.1+575
 * Docker version 19.03.6
 * GraalVM Java version 20.3.0.r8-grl
+
+## Arquitectura 
+
+Arquitectura del sistema
+
+![Arquitectura del sistema](/diagrams/Arquitectura-Sistema.png)
