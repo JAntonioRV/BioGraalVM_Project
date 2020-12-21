@@ -1,9 +1,9 @@
 # BioGraalVM_Project
 
-##Visión
+## Visión
 Desarrollar una herramienta que permita el manejo de secuencias de ADN por medio de herramientas de programación poliglota con GraalVM.
 
-##Alcance
+## Alcance
 Desarrollo de una API REST con Micronaut y GraalVM con funcionalidades de secuencias ADN simples:
 * Complement
 * Reverse Complement
