@@ -24,4 +24,4 @@ Dicha API REST se consultará por medio una aplicación Web de Angular que tenga
 
 Arquitectura del sistema
 
-[Arquitectura del sistema](/diagrams/Arquitectura-Sistema.png)
+![Arquitectura del sistema](/diagrams/Arquitectura-Sistema.png)
