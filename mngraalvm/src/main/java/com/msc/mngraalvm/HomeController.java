@@ -1,13 +1,14 @@
 package com.msc.mngraalvm;
 
+import com.msc.model.About;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.HttpStatus;
 
+import javax.inject.Inject;
+
 @Controller("/home")
 public class HomeController {
-
-    final private String _VERSION="v0.1";
 
     @Get("/")
     public HttpStatus index() {
@@ -15,12 +16,12 @@ public class HomeController {
     }
 
     @Get("/about")
-    String command(String command) {
-        String result = "";
+    About command(String command) {
+        About about = null;
 
         if(command.toUpperCase().equals("V"))
-            result = _VERSION;
+            about = new About();
 
-        return result;
+        return about;
     }
 }
