@@ -23,5 +23,16 @@ Dicha API REST se consultará por medio una aplicación Web de Angular que tenga
 ## Arquitectura 
 
 Arquitectura del sistema
+<<<<<<< HEAD
 
 ![Arquitectura del sistema](/diagrams/Arquitectura-Sistema.png)
+=======
+![Arquitectura del sistema](/diagrams/Arquitectura-Sistema.png)
+
+Diagrama de clases
+
+![Arquitectura del sistema](/diagrams/DC_MNGraalVM.jpg)
+
+Diagrama de componentes
+![Arquitectura del sistema](/diagrams/DComp_MNGraalVM.jpg)
+>>>>>>> hotfixes
