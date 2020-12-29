@@ -16,11 +16,11 @@ ADD . build
 RUN gu install native-image
 
 #Installs python language
-#RUN gu install python
+RUN gu install python
 
 # run the native image compiler, you should already know the command arguments
 # if you're not running micronaut
-RUN native-image --no-server --class-path mngraalvm.jar
+RUN native-image --no-server --language:python --class-path mngraalvm.jar
 
 # the native command will be used to run the application
 CMD ./mngraalvm

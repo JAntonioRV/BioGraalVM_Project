@@ -23,6 +23,7 @@ Dicha API REST se consultará por medio una aplicación Web de Angular que tenga
 ## Arquitectura 
 
 Arquitectura del sistema
+
 ![Arquitectura del sistema](/diagrams/Arquitectura-Sistema.png)
 
 Diagrama de clases
@@ -31,3 +32,4 @@ Diagrama de clases
 
 Diagrama de componentes
 ![Arquitectura del sistema](/diagrams/DComp_MNGraalVM.jpg)
+
