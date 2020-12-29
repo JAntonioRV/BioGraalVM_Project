@@ -24,7 +24,6 @@ public class Sequences {
 	 * @param sequence
 	 */
 	public static String reverse_complement(String sequence) {
-		// TODO - implement Sequences.reverse_complement
-		throw new UnsupportedOperationException();
+		return pfreversecomplement.run(sequence);
 	}
 }
