@@ -2,7 +2,9 @@ import polyglot;
 
 @polyglot.export_value
 def reverse_complement(sequence):
-    arraysequence = list(sequence)
+    sequencenobreaks = sequence.replace("\n","")
+    sequenceUpper = sequencenobreaks.upper()
+    arraysequence = list(sequenceUpper)
     size = len(arraysequence)
     arrayrevcomplementsq = [" "] * size
     npos = size - 1
