@@ -6,6 +6,7 @@ import com.msc.sequences.Sequences;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.HttpStatus;
+import io.micronaut.http.annotation.Post;
 
 import javax.annotation.Nullable;
 
@@ -19,7 +20,7 @@ public class SequencesController {
         return HttpStatus.OK;
     }
 
-    @Get("/all")
+    @Post("/all")
     ResultSequence sequencesall(String s) {
         try{
             result.setComplement(Sequences.complement(s));

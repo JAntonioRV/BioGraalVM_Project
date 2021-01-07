@@ -5,6 +5,7 @@ import com.msc.sequences.Sequences;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.HttpStatus;
+import io.micronaut.http.annotation.Post;
 
 import javax.annotation.Nullable;
 
@@ -18,7 +19,7 @@ public class ReverseComplementController {
         return HttpStatus.OK;
     }
 
-    @Get("/reversecomplement")
+    @Post("/reversecomplement")
     Result reversecomplement(String s) {
         try{
             result.setResult(Sequences.reverse_complement(s));
