@@ -1,6 +1,7 @@
 package com.msc.mngraalvm;
 
 import com.msc.model.Result;
+import com.msc.model.ResultSequence;
 import com.msc.sequences.Sequences;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
@@ -9,20 +10,21 @@ import io.micronaut.http.annotation.Post;
 
 import javax.annotation.Nullable;
 
-@Controller("/reverseComplement")
-public class ReverseComplementController {
+@Controller("/sequences")
+public class SequencesController {
 
-    private final Result result;
+    private final ResultSequence result;
 
     @Get("/")
     public HttpStatus index() {
         return HttpStatus.OK;
     }
 
-    @Post("/reversecomplement")
-    Result reversecomplement(String s) {
+    @Post("/all")
+    ResultSequence sequencesall(String s) {
         try{
-            result.setResult(Sequences.reverse_complement(s));
+            result.setComplement(Sequences.complement(s));
+            result.setReversecomplement(Sequences.reverse_complement(s));
             result.setOk(true);
         }catch(Exception ex){
             result.setError(ex.getMessage());
@@ -30,7 +32,7 @@ public class ReverseComplementController {
         return result;
     }
 
-    public ReverseComplementController(@Nullable Result result) {
+    public SequencesController(@Nullable ResultSequence result) {
         this.result = result;
     }
 }

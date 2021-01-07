@@ -2,7 +2,9 @@ import polyglot;
 
 @polyglot.export_value
 def complement(sequence):
-    arraysequence = list(sequence)
+    sequencenobreaks = sequence.replace("\n","")
+    sequenceUpper = sequencenobreaks.upper()
+    arraysequence = list(sequenceUpper)
     size = len(arraysequence)
     arraycomplementsq = [" "] * size
     npos = 0
