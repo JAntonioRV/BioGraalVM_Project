@@ -1,6 +1,6 @@
 # use graalvm image
 # replace the occurences of "mngraalvm" with you jar name
-FROM oracle/graalvm-ce:20.3.0-java8
+FROM jantoniorv/graalvm-ce:20.3.0-java8
 
 # expose your port, 8080 fo Micronaut applicatoin
 EXPOSE 8080

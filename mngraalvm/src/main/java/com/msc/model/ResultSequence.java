@@ -17,6 +17,8 @@ public class ResultSequence implements Serializable {
 	@JsonProperty
 	private String reversecomplement;
 	@JsonProperty
+	private Transcription transcription;
+	@JsonProperty
 	private String error;
 	@JsonProperty
 	private boolean ok;
@@ -26,6 +28,7 @@ public class ResultSequence implements Serializable {
 		this.reversecomplement = "";
 		this.error = "";
 		this.ok = false;
+		this.transcription = new Transcription();
 	}
 
 	@JsonProperty
@@ -45,6 +48,11 @@ public class ResultSequence implements Serializable {
 	public void setReversecomplement(String reversecomplement) {
 		this.reversecomplement = reversecomplement;
 	}
+
+	@JsonProperty
+	public Transcription getTranscription() { return transcription; }
+
+	public void setTranscription(Transcription transcription) { this.transcription = transcription; }
 
 	@JsonProperty
 	public String getError() {
