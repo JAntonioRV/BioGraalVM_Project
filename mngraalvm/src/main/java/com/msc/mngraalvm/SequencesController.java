@@ -25,6 +25,7 @@ public class SequencesController {
         try{
             result.setComplement(Sequences.complement(s));
             result.setReversecomplement(Sequences.reverse_complement(s));
+            result.setTranscription(Sequences.transcription(s));
             result.setOk(true);
         }catch(Exception ex){
             result.setError(ex.getMessage());
