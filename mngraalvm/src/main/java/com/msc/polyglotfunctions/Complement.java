@@ -28,4 +28,7 @@ public class Complement extends SequenceResourses implements ISequence{
 
         return complement;
     }
+
+    @Override
+    public Object run_object(String sequence) { return null; }
 }

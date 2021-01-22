@@ -1,3 +1,5 @@
+# AUTHOR : José Antonio Romero Ventura
+
 import polyglot;
 
 @polyglot.export_value
