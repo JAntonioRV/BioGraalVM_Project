@@ -26,4 +26,7 @@ public class ReverseComplement extends SequenceResourses implements ISequence {
 
         return reversecomplement;
     }
+
+    @Override
+    public Object run_object(String sequence) { return null; }
 }

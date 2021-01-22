@@ -1,6 +1,7 @@
 package com.msc.polyglotfunctions;
 
 import io.micronaut.core.annotation.Introspected;
+import org.graalvm.polyglot.Value;
 
 @Introspected
 public interface ISequence {
@@ -11,4 +12,9 @@ public interface ISequence {
 	 */
 	String run(String sequence);
 
+	/**
+	 *
+	 * @param sequence
+	 */
+	Object run_object(String sequence);
 }
