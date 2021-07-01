@@ -28,8 +28,8 @@ Arquitectura del sistema
 
 Diagrama de clases
 
-![Arquitectura del sistema](/diagrams/DC_MNGraalVM.jpg)
+![Arquitectura del sistema](/diagrams/DC_MNGraalVM.png)
 
 Diagrama de componentes
-![Arquitectura del sistema](/diagrams/DComp_MNGraalVM.jpg)
+![Arquitectura del sistema](/diagrams/DComp_MNGraalVM.png)
 

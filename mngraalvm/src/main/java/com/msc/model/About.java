@@ -14,7 +14,7 @@ public class About implements Serializable {
     private String version;
 
     public About(){
-        this.version = "v0.1";
+        this.version = "v2.0";
     }
 
     @JsonProperty
