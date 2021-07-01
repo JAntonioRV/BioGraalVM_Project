@@ -11,14 +11,16 @@ nucl_complement = {
         "A":"T",
         "C":"G",
         "T":"A",
-        "G":"C"
+        "G":"C",
+        "N":"N"
     }
 
 rna_transcription = {
         "A":"A",
         "C":"C",
         "T":"U",
-        "G":"G"
+        "G":"G",
+        "N":"N"
     }
 
 codons = {
