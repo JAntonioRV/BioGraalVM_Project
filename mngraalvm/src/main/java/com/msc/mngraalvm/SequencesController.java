@@ -13,7 +13,7 @@ import javax.annotation.Nullable;
 @Controller("/sequences")
 public class SequencesController {
 
-    private final ResultSequence result;
+    private ResultSequence result;
 
     @Get("/")
     public HttpStatus index() {
@@ -23,6 +23,7 @@ public class SequencesController {
     @Post("/all")
     ResultSequence sequencesall(String s) {
         try{
+            result = new ResultSequence();
             result.setComplement(Sequences.complement(s));
             result.setReversecomplement(Sequences.reverse_complement(s));
             result.setTranscription(Sequences.transcription(s));
